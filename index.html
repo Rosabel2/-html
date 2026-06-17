@@ -118,7 +118,6 @@
         </div>
 
         <ul class="file-list" id="fileList">
-            <!-- 文件列表会由 JavaScript 自动生成 -->
         </ul>
 
         <div class="footer">
@@ -127,22 +126,14 @@
     </div>
 
     <script>
-        // 手动维护的文件列表（新增文件时在这里添加）
         const files = [
             {
                 name: "caihui-data-platform-prototype.html",
                 description: "📊 采慧数据平台原型报告",
                 date: "2026-06-17"
             }
-            // 👇 新增文件时，在这里添加新条目，例如：
-            // {
-            //     name: "report_v2.1.1.html",
-            //     description: "📈 采慧数据平台 V2.1.1 报告",
-            //     date: "2026-06-20"
-            // }
         ];
 
-        // 渲染文件列表
         const fileList = document.getElementById('fileList');
         const fileCount = document.getElementById('fileCount');
 
@@ -161,8 +152,6 @@
         }
 
         fileCount.textContent = files.length;
-
-        // 显示更新时间
         document.getElementById('updateTime').textContent = new Date().toLocaleString('zh-CN');
     </script>
 </body>
